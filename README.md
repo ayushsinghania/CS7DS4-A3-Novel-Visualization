@@ -4,9 +4,9 @@ IPL Data visualizations using Vue.js
 
 Link to the project  - https://a3-data-viz-cs7ds4.herokuapp.com/#/Page1
 
-## Project setup
+## Project setup for local environment 
 ```
-npm install
+npm instal
 ```
 
 ### Compiles and hot-reloads for development
