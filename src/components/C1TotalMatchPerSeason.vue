@@ -20,7 +20,7 @@
 
 <script>
 import Api from '@/app/Api';
-import seasonmatches from '@/assets/data/TotalMatchPerSeason.json';
+import TotalMatchPerSeason from '@/assets/data/TotalMatchPerSeason.json';
 import C2MostMatchesPerGround from '@/components/C2MostMatchesPerGround.vue'
 
 export default {
@@ -47,7 +47,7 @@ export default {
         'labels':[]
       };
 
-      seasonmatches.forEach(matches => {
+      TotalMatchPerSeason.forEach(matches => {
         arr['data'].push(matches['total'])
         arr['labels'].push(matches['season'])
       })
@@ -56,10 +56,10 @@ export default {
     },
     chartData() {
       this.d = this.getData();
-      return Api.prepareData(this.d)['data'];
+      return Api.prepareDataC1(this.d)['data'];
     },
     options() {
-      return Api.prepareData(this.d)['options'];
+      return Api.prepareDataC1(this.d)['options'];
     }
   }
 }

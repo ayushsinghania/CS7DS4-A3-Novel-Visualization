@@ -48,17 +48,33 @@ export default {
     },
     chartData() {
       this.d = this.getData();
-      var data = Api.prepareData(this.d)['data'];
-      data.datasets[0].backgroundColor = 'rgba(220, 50, 100)';
-      return data;
+      // var data = Api.prepareData1(this.d['data'], this.d['labels'])['data'];
+      // data.datasets[0].backgroundColor = 'rgba(220, 50, 100)';
+      // return data;
+      return this.prepareConfig(this.d['data'],this.d['labels'])['data'];
     },
     options() {
       return Api.prepareData(this.d)['options'];
+    },
+    prepareConfig(totalrun,label) {
+      var barChartData = {
+        type: 'Bar',
+        data: {
+          labels: label,
+          datasets: [{
+            label: 'Total Run',
+            backgroundColor:"rgba(220, 50, 100)",
+            borderColor: "#ED5F5A",
+            data: totalrun,
+            fill: false,
+          }]
+        }
+      };
+      return barChartData;
     }
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 

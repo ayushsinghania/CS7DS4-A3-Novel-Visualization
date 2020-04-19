@@ -71,7 +71,7 @@ export default {
     },
     options() {
         var options  = Api.prepareData(this.d)['options'];
-        // options.animation = 0;
+        options.animation = 0;
       return options;
     },
     prepareConfig(win,loss) {
@@ -94,7 +94,6 @@ export default {
           }]
         }
       }
-
       return config;
     }
   }
