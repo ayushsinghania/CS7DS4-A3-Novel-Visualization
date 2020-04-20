@@ -10,7 +10,7 @@
           <b-nav-item v-on:click.stop.prevent :to="{ path: '/Page3' }" >Prediction</b-nav-item>
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item class="Kaggle-data" href="https://www.kaggle.com/datasets" target="_blank">Kaggle Dataset</b-nav-item>
+          <b-nav-item class="Kaggle-data" href="https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset" target="_blank">Kaggle Dataset</b-nav-item>
           <b-nav-item class="active" href="https://github.com/ayushsinghania/CS7DS4-A3-Novel-Visualization" target="_blank">Github</b-nav-item>
           <b-nav-item ><status /></b-nav-item>
         </b-navbar-nav>
