@@ -5,6 +5,7 @@
 
 IPL Data visualizations using Vue.js
 
+Link to the project  - https://a3-data-viz-cs7ds4.herokuapp.com/#/Page1
 
 Link to Google drive with Presentation Video and ProjectFile - https://drive.google.com/drive/folders/1a5Jr2P3ykyq2he9ggVVidY5KTNO_Wqfh?usp=sharing 
 
